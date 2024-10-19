@@ -5,7 +5,7 @@ export default function Player({initialName, symbol, isActive, onChangeName})
     const [playerName, setPlayerName] = useState(initialName)
     const [isEditing, setIsEditing] = useState(false)
 
-    // ImportantConcept
+    // ImportantConcept changing the state variable by looking at the same state variable it has scheduling so use a function to execute immediately
     function handleEditClick() {
         setIsEditing((editing) => !editing);
         if(isEditing){

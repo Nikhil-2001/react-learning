@@ -5,7 +5,8 @@ import Log from "./components/Log"
 import GameOver from "./components/GameOver"
 import { WINNING_COMBINATIONS } from "./winning-combinations"
 
-const intialGameBoard = [
+const PLAYER = {X:'Player 1', O:'Player 2'}
+const INITIAL_GAME_BOARD = [
   [null, null, null],
   [null, null, null],
   [null, null, null]
@@ -33,7 +34,7 @@ function deriveWinner(gameBoard, playerNames) {
 }
 
 function deriveGameBoard(gameTurns){
-  let gameBoard = [...intialGameBoard.map(array => [...array])];
+  let gameBoard = [...INITIAL_GAME_BOARD.map(array => [...array])];
 
   for (const turn of gameTurns) {
     const { square, player } = turn;
@@ -55,6 +56,7 @@ function App() {
   const winner = deriveWinner(gameBoard, playerNames)
   const hasDraw = gameTurns.length === 9 && !winner
 
+  //For Arrays as state, use deep copy to avoid bugs without it the value in the reference get's updated immediately
   function handleSelectSquare(rowIndex, colIndex) {
     setGameTurns(prevTurns => {
       const activePlayer = deriveActivePlayer(prevTurns)
@@ -79,8 +81,8 @@ function App() {
     <main>
       <div id="game-container">
         <ol id="players" className="highlight-player">
-          <Player initialName="Player 1" symbol="X" isActive={activePlayer === 'X'} onChangeName={handlePlayerNameChange}></Player>
-          <Player initialName="Player 2" symbol="O" isActive={activePlayer === 'O'} onChangeName={handlePlayerNameChange}></Player>
+          <Player initialName={PLAYER.X} symbol="X" isActive={activePlayer === 'X'} onChangeName={handlePlayerNameChange}></Player>
+          <Player initialName={PLAYER.O} symbol="O" isActive={activePlayer === 'O'} onChangeName={handlePlayerNameChange}></Player>
         </ol>
         {(winner || hasDraw) && <GameOver winner={winner} onRestart={handleRematch} />}
         <GameBoard onSelectSquare={handleSelectSquare} board={gameBoard} />
