@@ -1,1 +1,35 @@
-{"events":[{"title":"React Training 2","image":"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1sCvLe.img?w=600&h=338&m=6","date":"2024-11-03","description":"asdasdas","id":"69360f45-ee70-4b15-8fed-58ddb471d1e6"},{"title":"Nexon Car","image":"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1sCvLe.img?w=600&h=338&m=6","date":"2024-11-01","description":"My new Nexon car!! Editedd!!","id":"f8747f82-52d7-4d7f-909d-de099b66e8a1"},{"title":"React Training","image":"https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1sCvLe.img?w=600&h=338&m=6","date":"2024-11-01","description":"Training By Nikhil","id":"92d96ed1-3869-4c4e-be99-7f2241fb1a7d"}],"users":[{"email":"test@gmail.com","password":"$2a$12$OyuBGkEVP/WtuXG/9okmdOg8Fpf7n4oy7v1b.R4HxU7.fFm.jtUiG","id":"42b2d4fd-779c-4707-83fc-4dcc0a60ef07"},{"email":"test2@gmail.com","password":"$2a$12$U6BSU5Q2ysMi3yM3eilUz.hvcFHrjTjoKvZsj64SyxOiJ7fW4/aXm","id":"8309854d-be38-46e7-949e-884346f1f1b5"},{"email":"test555@gmail.com","password":"$2a$12$RPWvCJKQM9dD0OPqIN/iWOzyv9sLCRc/yT1cJPPsuqcP3hKrYbtmi","id":"2b9cb996-7048-4472-a73c-a2811cc92432"}]}
+{
+    "events": [
+        {
+            "title": "React Training",
+            "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1sCvLe.img?w=600&h=338&m=6",
+            "date": "2024-11-01",
+            "description": "Training By Nikhil",
+            "id": "92d96ed1-3869-4c4e-be99-7f2241fb1a7d"
+        },
+        {
+            "title": "A new Event By Nikhil",
+            "image": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1sCvLe.img?w=600&h=338&m=6",
+            "date": "2022-10-01",
+            "description": "Some awesome event! Editedededed",
+            "id": "2a42fcc4-ea21-4bdd-abf6-c40006dc66a9"
+        }
+    ],
+    "users": [
+        {
+            "email": "test@gmail.com",
+            "password": "$2a$12$OyuBGkEVP/WtuXG/9okmdOg8Fpf7n4oy7v1b.R4HxU7.fFm.jtUiG",
+            "id": "42b2d4fd-779c-4707-83fc-4dcc0a60ef07"
+        },
+        {
+            "email": "test2@gmail.com",
+            "password": "$2a$12$U6BSU5Q2ysMi3yM3eilUz.hvcFHrjTjoKvZsj64SyxOiJ7fW4/aXm",
+            "id": "8309854d-be38-46e7-949e-884346f1f1b5"
+        },
+        {
+            "email": "test555@gmail.com",
+            "password": "$2a$12$RPWvCJKQM9dD0OPqIN/iWOzyv9sLCRc/yT1cJPPsuqcP3hKrYbtmi",
+            "id": "2b9cb996-7048-4472-a73c-a2811cc92432"
+        }
+    ]
+}
