@@ -3,6 +3,7 @@ import { QueryClient } from '@tanstack/react-query';
 export const queryClient = new QueryClient();
 
 export default async function fetchEvents({ signal, searchTerm, max }) {
+  console.log('Rendered Again because of invalidating data in Fetch Events')
   console.log(searchTerm);
   let url = 'http://localhost:3000/events';
 

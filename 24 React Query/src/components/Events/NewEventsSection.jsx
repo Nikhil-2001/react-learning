@@ -5,6 +5,8 @@ import { useQuery } from '@tanstack/react-query'
 import fetchEvents from '../../util/http.js';
 
 export default function NewEventsSection() {
+  console.log('Here first in component new load as we are redirecting to evenets')
+
   const {data, isPending, isError, error} = useQuery({
     queryKey: ['events', {max: 3}],
     queryFn: ({signal}) => fetchEvents({signal, max: 3}),
